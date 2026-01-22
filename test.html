@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <select id="assignment_subject" name="assignment_subject" aria-label="assignment_subject"
+        class="chosen-select calc_subject_select"
+        onchange="ass_select(this.value, 'Pages | Words', '1 ', '250', '', '');sle_sub_name(this);set_level()"
+        data-type="blank" style="color: rgb(29, 29, 29);">
+        <option value="">Select Subject</option>
+        <optgroup label="Management">
+            <option data-level="1" sub_id="93" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="44" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="82" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="34" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="86" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="25" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="24" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="35" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="90" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="46" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="47" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="79" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="78" data-addonprice="1000" value="1"></option>
+            <option data-level="1" sub_id="10" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="36" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="39" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="6" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="40" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="37" data-addonprice="0" value="2"></option>
+            <option data-level="1" sub_id="62" data-addonprice="2200" value="2"></option>
+            <option data-level="1" sub_id="94" data-addonprice="3500" value="2"></option>
+            <option data-level="1" sub_id="133" data-addonprice="0" value="3"></option>
+        </optgroup>
+        <optgroup label="Finance">
+            <option data-level="1" sub_id="72" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="27" data-addonprice="1500" value="1"></option>
+            <option data-level="1" sub_id="87" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="9" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="98" data-addonprice="6500" value="2"></option>
+            <option data-level="1" sub_id="97" data-addonprice="6500" value="2"></option>
+            <option data-level="1" sub_id="96" data-addonprice="6500" value="2"></option>
+            <option data-level="1" sub_id="95" data-addonprice="3500" value="2"></option>
+        </optgroup>
+        <optgroup label="Tourism">
+            <option data-level="1" sub_id="84" data-addonprice="0" value="1"> &amp; </option>
+            <option data-level="1" sub_id="80" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="76" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="81" data-addonprice="0" value="1"></option>
+        </optgroup>
+        <optgroup label="Law">
+            <option data-level="1" sub_id="43" data-addonprice="1000" value="1"></option>
+            <option data-level="1" sub_id="131" data-addonprice="1000" value="1"></option>
+            <option data-level="1" sub_id="129" data-addonprice="1000" value="1"></option>
+            <option data-level="1" sub_id="130" data-addonprice="1000" value="1"></option>
+        </optgroup>
+        <optgroup label="Health ">
+            <option data-level="1" sub_id="31" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="85" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="32" data-addonprice="0" value="1"> &amp; </option>
+            <option data-level="1" sub_id="100" data-addonprice="1500" value="1"></option>
+            <option data-level="1" sub_id="51" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="8" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="54" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="59" data-addonprice="2000" value="1"> </option>
+            <option data-level="1" sub_id="57" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="102" data-addonprice="2000" value="2"> </option>
+            <option data-level="1" sub_id="104" data-addonprice="10000" value="3"> </option>
+        </optgroup>
+        <optgroup label="Arts &amp; Humanities">
+            <option data-level="1" sub_id="67" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="68" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="69" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="71" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="52" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="75" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="91" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="63" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="4" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="13" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="23" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="28" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="29" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="33" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="2" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="65" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="60" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="55" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="103" data-addonprice="2000" value="3"> </option>
+        </optgroup>
+        <optgroup label="Education">
+            <option data-level="1" sub_id="77" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="18" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="73" data-addonprice="0" value="1"></option>
+        </optgroup>
+        <optgroup label="Languages ">
+            <option data-level="1" sub_id="45" data-addonprice="0" value="1"> </option>
+            <option data-level="1" sub_id="22" data-addonprice="1500" value="1"></option>
+            <option data-level="1" sub_id="21" data-addonprice="0" value="1"></option>
+            <option data-level="1" sub_id="30" data-addonprice="2500" value="2"> </option>
+            <option data-level="1" sub_id="42" data-addonprice="0" value="2"> </option>
+            <option data-level="1" sub_id="61" data-addonprice="2500" value="2"> </option>
+            <option data-level="1" sub_id="70" data-addonprice="2500" value="2"> </option>
+        </optgroup>
+        
+    </select>
+
+</body>
+
+</html>

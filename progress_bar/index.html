@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Glass Progress Bar</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    }
+
+    /* Progress container */
+    .progress-container {
+        position: relative;
+        width: 350px;
+        height: 22px;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        overflow: hidden;
+    }
+
+    /* Progress bar */
+    .progress-bar {
+        height: 100%;
+        width: 0%;
+        /* 👈 Change progress here */
+        border-radius: 30px;
+        background: linear-gradient(135deg,
+                rgba(0, 255, 255, 0.9),
+                rgba(0, 140, 255, 0.9));
+        box-shadow: 0 0 15px rgba(0, 200, 255, 0.7);
+    }
+
+    /* Percentage text */
+    .progress-text {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #fff;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    h2{
+        margin-bottom: 10px;
+
+        color: #fff;
+    }
+</style>
+
+<body>
+    <h2>Downloading......</h2>
+    <div class="progress-container">
+        <div class="progress-bar"></div>
+        <span class="progress-text">0%</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
